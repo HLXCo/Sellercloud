@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'Sellercloud',
   packages = ['Sellercloud'], # this must be the same as the name above
-  version = '0.1.1',
+  version = '0.1.2',
   description = 'Simple Sellercloud wrapper',
   author = 'Sergio Molanes',
   author_email = 'sergio@hlx.co',
