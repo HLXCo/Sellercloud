@@ -7,6 +7,7 @@ pip install Sellercloud
 
 # Basic functionality:
 
+```python
 from Sellercloud import Sellercloud
 Credentials = {"WSDL":"http://ws.sellercloud.com/scservice.asmx?WSDL" # Replace this with your WSDL
 	,"UserName":"developer@yourdomain.com"
@@ -14,4 +15,5 @@ Credentials = {"WSDL":"http://ws.sellercloud.com/scservice.asmx?WSDL" # Replace 
 
 sc = Sellercloud(Credentials)
 print(sc.GetClientID())
+```
   
