@@ -3,7 +3,11 @@ Python 3.x wrapper to interact with Sellercloud SOAP web services.  This wrapper
 
 # To collect the package:
 
+From the Pypi package manager:
 pip install Sellercloud
+
+From git version control:
+git clone https://github.com/HLXCo/Sellercloud.git
 
 # Basic functionality:
 
