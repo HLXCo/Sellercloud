@@ -8,12 +8,18 @@ pip install Sellercloud
 # Basic functionality:
 
 ```python
+# * -	Import our Sellercloud library
 from Sellercloud import Sellercloud
+
+# * -	Declare your credentials (name, password & host)
 Credentials = {"WSDL":"http://ws.sellercloud.com/scservice.asmx?WSDL" # Replace this with your WSDL
 	,"UserName":"developer@yourdomain.com"
 	,"Password":"your_password"}
 
+# * -	Instantiate the object
 sc = Sellercloud(Credentials)
+
+# * -	Call one of any of the documented methods & print the result
 print(sc.GetClientID())
 ```
   
