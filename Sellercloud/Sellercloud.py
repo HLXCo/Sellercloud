@@ -1334,3 +1334,13 @@ class Sellercloud():
 		try: 	result = self.cl.service.WarehouseInventoryTransferRequest_Delete(TransferRequestID)
 		except:	result = "Error"
 		return result
+
+	def ProductWarehouse_AdjustQty(self, ProductID, WarehouseID, Qty, Reason, SerialsList):
+		try: 	result = self.cl.service.ProductWarehouse_AdjustQty(ProductID, WarehouseID, Qty, Reason, SerialsList)
+		except:	result = "Error"
+		return result
+
+	def ProductWarehouse_SetPhysical(self, ProductID, WarehouseID, Qty, SerialsList):
+		try: 	result = self.cl.service.ProductWarehouse_SetPhysical(ProductID, WarehouseID, Qty, SerialsList)
+		except:	result = "Error"
+		return result
