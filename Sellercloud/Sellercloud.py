@@ -25,11 +25,6 @@ class Sellercloud():
 		except:	result = "Error"
 		return result
 
-	def GetClientID(self):
-		try: 	result = self.cl.service.GetClientID()
-		except:	result = "Error"
-		return result
-
 	def LoadLayouts(self):
 		try: 	result = self.cl.service.LoadLayouts()
 		except:	result = "Error"
@@ -300,20 +295,6 @@ class Sellercloud():
 		except:	result = "Error"
 		return result
 
-	def GetClientName(self, ClientID):
-		try:
-			result = self.cl.service.GetClientName(ClientID)
-		except:
-			result = "Error"
-		return result
-
-	def GetClientOptions(self):
-		try:
-			result = self.cl.service.GetClientOptions()
-		except:
-			result = "Error"
-		return result
-
 	def Product_UpdatePriceOnChannel(self,ProductSetList):
 		try:
 			for ProductSet in ProductSetList:
@@ -326,11 +307,6 @@ class Sellercloud():
 
 	def ProductLocation_RemoveQuantitiesOfAnAdjustment(self, adjustmentID):
 		try: 	result = self.cl.service.ProductLocation_RemoveQuantitiesOfAnAdjustment(adjustmentID)
-		except:	result = "Error"
-		return result
-
-	def GetAmazonMerchantCached(self, AmazonCompanyID):
-		try: 	result = self.cl.service.GetAmazonMerchantCached(AmazonCompanyID)
 		except:	result = "Error"
 		return result
 
